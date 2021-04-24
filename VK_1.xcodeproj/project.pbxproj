@@ -12,7 +12,7 @@
 		6226F9B82633EC1C00610ED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6226F9B62633EC1C00610ED0 /* Main.storyboard */; };
 		6226F9BA2633EC1D00610ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6226F9B92633EC1D00610ED0 /* Assets.xcassets */; };
 		6226F9BD2633EC1D00610ED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6226F9BB2633EC1D00610ED0 /* LaunchScreen.storyboard */; };
-		6238EFC12633EDB4007C725E /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6238EFC02633EDB4007C725E /* LoginFormViewController.swift */; };
+		6238EFCB2634030B007C725E /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6238EFCA2634030B007C725E /* LoginFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		6226F9B92633EC1D00610ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6226F9BC2633EC1D00610ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6226F9BE2633EC1D00610ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6238EFC02633EDB4007C725E /* LoginFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormViewController.swift; sourceTree = "<group>"; };
+		6238EFCA2634030B007C725E /* LoginFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			children = (
 				6226F9B02633EC1C00610ED0 /* AppDelegate.swift */,
 				6226F9B22633EC1C00610ED0 /* SceneDelegate.swift */,
-				6238EFC02633EDB4007C725E /* LoginFormViewController.swift */,
+				6238EFCA2634030B007C725E /* LoginFormViewController.swift */,
 				6226F9B62633EC1C00610ED0 /* Main.storyboard */,
 				6226F9B92633EC1D00610ED0 /* Assets.xcassets */,
 				6226F9BB2633EC1D00610ED0 /* LaunchScreen.storyboard */,
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6238EFC12633EDB4007C725E /* LoginFormViewController.swift in Sources */,
+				6238EFCB2634030B007C725E /* LoginFormViewController.swift in Sources */,
 				6226F9B12633EC1C00610ED0 /* AppDelegate.swift in Sources */,
 				6226F9B32633EC1C00610ED0 /* SceneDelegate.swift in Sources */,
 			);
@@ -161,6 +161,7 @@
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 /* End PBXVariantGroup section */
 
