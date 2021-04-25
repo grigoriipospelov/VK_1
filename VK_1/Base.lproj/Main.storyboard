@@ -128,11 +128,49 @@
                             <outlet property="delegate" destination="6YD-pr-rdl" id="9gI-Wk-8ox"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Мои группы " id="yci-9h-6Vg"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Мои группы " id="yci-9h-6Vg">
+                        <barButtonItem key="rightBarButtonItem" image="plus.circle.fill" catalog="system" style="plain" id="cCr-Pi-MIg">
+                            <color key="tintColor" systemColor="systemBlueColor"/>
+                            <connections>
+                                <segue destination="x0Y-SJ-kqc" kind="show" id="Zcj-5R-sHX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cG-Y0-D0m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3476.811594202899" y="507.58928571428567"/>
+        </scene>
+        <!--Глобальный поиск -->
+        <scene sceneID="3aj-R1-Fga">
+            <objects>
+                <tableViewController id="x0Y-SJ-kqc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="kvu-E9-nuF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XBU-CR-azA">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XBU-CR-azA" id="I5Q-Mb-Rsc">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="x0Y-SJ-kqc" id="2NL-eO-ukX"/>
+                            <outlet property="delegate" destination="x0Y-SJ-kqc" id="cd4-4D-bEO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Глобальный поиск " id="Ypg-Qz-iNH"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgg-IE-O3H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4335" y="519"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="zak-pQ-snl">
@@ -363,6 +401,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
