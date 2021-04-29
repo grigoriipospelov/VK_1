@@ -41,7 +41,7 @@ class LoginFormViewController: UIViewController {
         guard identifier == "LoginSegue" else {
             return false
         }
-          let   isLoginPasswordCorrect = loginTextField.text == "admin" && passwordTextField.text == "123"
+          let   isLoginPasswordCorrect = loginTextField.text == "" && passwordTextField.text == ""
         if isLoginPasswordCorrect {
             return true
         } else {
