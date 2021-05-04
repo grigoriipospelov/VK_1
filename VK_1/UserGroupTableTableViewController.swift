@@ -50,8 +50,8 @@ class UserGroupTableTableViewController: UITableViewController {
             GlobalUserGroupTableViewCell
         
         let group = groups[indexPath.row]
-        cell.configure(title: group, image: UIImage(systemName: "bolt"))
-        
+       
+        cell.configure(title: group, image: UIImage(systemName: "poweroff"))
         return cell
     }
   

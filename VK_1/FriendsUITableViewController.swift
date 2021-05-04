@@ -1,14 +1,7 @@
-//
-//  AllUserGroupTableViewController.swift
-//  VK_1
-//
-//  Created by Grisha Pospelov on 29.04.2021.
-//
-
 import UIKit
 
-class AllUserGroupTableViewController: UITableViewController {
-    var groups = ["спорт", "еда", "музыка", "путешесвтия"]
+class FriendsUiTableView: UITableViewController {
+    var groups = ["Саша", "Маша", "Глеб", "Рома"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +23,14 @@ class AllUserGroupTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: GlobalUserGroupTableViewCell.reuseIdentifier, for: indexPath) as!
-            GlobalUserGroupTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: FriendsTableViewCell.reuseIdentifier, for: indexPath) as!
+            FriendsTableViewCell
         
         let group = groups[indexPath.row]
         cell.configure(title: group, image: UIImage(systemName: "bolt"))
+        
         return cell
     }
   
 }
+
